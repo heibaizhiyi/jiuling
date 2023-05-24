@@ -1,0 +1,106 @@
+/* styles.css */
+
+/* 公共样式 */
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.sidebar {
+  width: 300px;
+  padding: 20px;
+  background-color: #f5f5f5;
+}
+
+.content {
+  flex: 1;
+  padding: 20px;
+}
+
+h1,
+h2 {
+  margin-top: 0;
+  font-weight: normal;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+li {
+  margin-bottom: 10px;
+}
+
+a {
+  text-decoration: none;
+  color: #333;
+}
+
+.feature-item {
+  display: block;
+  padding: 10px;
+  background-color: #fff;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.feature-tooltip {
+  position: absolute;
+  background-color: #fff;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  padding: 10px;
+  display: none;
+}
+
+.main-box {
+  max-width: 600px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+/* 登录注册界面样式 */
+.container.login-register {
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.container.login-register .form-container {
+  max-width: 400px;
+  margin-bottom: 20px;
+}
+
+.container.login-register form {
+  display: flex;
+  flex-direction: column;
+}
+
+.container.login-register label {
+  margin-bottom: 5px;
+}
+
+.container.login-register input[type="text"],
+.container.login-register input[type="password"] {
+  width: 100%;
+  padding: 8px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.container.login-register button {
+  padding: 10px;
+  background-color: #333;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.container.login-register .error,
+.container.login-register .success {
+  text-align: center;
+}
